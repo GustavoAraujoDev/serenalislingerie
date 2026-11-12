@@ -394,7 +394,9 @@
     }
   </style>
 </head>
-<body class="bg-[#FAF6F4] text-[#26211E] min-h-screen flex flex-col items-center selection:bg-[#E8D8CF] selection:text-[#26211E]">
+
+  
+<body class="bg-[#F8F5F2] text-[#262F5B] min-h-screen flex flex-col items-center selection:bg-[#D7A89A] selection:text-[#262F5B]">
 
 <!-- ==========================================================
      OVERLAY
@@ -414,36 +416,36 @@
   id="mobileMenu"
   class="fixed top-0 left-0 h-full w-[290px] max-w-[85vw] overflow-y-auto bg-[#F8F5F2] z-[999] transform -translate-x-full transition-transform duration-300 shadow-xl"
 >
-  <!-- ========================================================
-       CABEÇALHO
-       ======================================================== -->
+
+  <!-- CABEÇALHO -->
 
   <div
-    class="flex items-center justify-between p-6 border-b border-[#E8DED5]"
+    class="flex items-center justify-between p-6 border-b border-[#E8DFDA]"
   >
 
     <div>
 
       <h2
-        class="text-xl font-serif tracking-widest text-[#26211E]"
+        class="text-xl font-serif-luxury tracking-widest text-[#262F5B]"
       >
-        ESSENZA
+        SERENALIS
       </h2>
 
       <p
-        class="text-[10px] tracking-[0.25em] text-[#9E7960] mt-1"
+        class="text-[10px] tracking-[0.25em] text-[#B8896E] mt-1"
       >
-        ÍNTIMAS
+        LINGERIE
       </p>
 
     </div>
 
 
     <!-- Fechar -->
+
     <button
       id="closeMenu"
       type="button"
-      class="text-[#26211E] hover:text-[#9E7960] p-2 transition-colors"
+      class="text-[#262F5B] hover:text-[#B8896E] p-2 transition-colors"
       aria-label="Fechar Menu"
     >
 
@@ -468,23 +470,19 @@
   </div>
 
 
-  <!-- ========================================================
-       NAVEGAÇÃO
-       ======================================================== -->
+  <!-- NAVEGAÇÃO -->
 
   <nav class="p-6">
 
     <div class="flex flex-col">
 
 
-      <!-- ====================================================
-           INÍCIO
-           ==================================================== -->
+      <!-- INÍCIO -->
 
       <button
         type="button"
         onclick="switchTab('menu'); fecharMenuMobile()"
-        class="group text-left py-4 border-b border-[#E8DED5] text-xs font-semibold tracking-[0.2em] uppercase text-[#5F5148] hover:text-[#9E7960] transition-colors"
+        class="group text-left py-4 border-b border-[#E8DFDA] text-xs font-semibold tracking-[0.2em] uppercase text-[#555D78] hover:text-[#B8896E] transition-colors"
       >
 
         <span class="flex items-center justify-between">
@@ -512,14 +510,12 @@
       </button>
 
 
-      <!-- ====================================================
-           COLEÇÃO
-           ==================================================== -->
+      <!-- COLEÇÃO -->
 
       <button
         type="button"
         onclick="switchTab('menu'); fecharMenuMobile()"
-        class="group text-left py-4 border-b border-[#E8DED5] text-xs font-semibold tracking-[0.2em] uppercase text-[#5F5148] hover:text-[#9E7960] transition-colors"
+        class="group text-left py-4 border-b border-[#E8DFDA] text-xs font-semibold tracking-[0.2em] uppercase text-[#555D78] hover:text-[#B8896E] transition-colors"
       >
 
         <span class="flex items-center justify-between">
@@ -547,14 +543,12 @@
       </button>
 
 
-      <!-- ====================================================
-           LINGERIE
-           ==================================================== -->
+      <!-- LINGERIE -->
 
       <button
         type="button"
         onclick="switchTab('menu'); fecharMenuMobile()"
-        class="group text-left py-4 border-b border-[#E8DED5] text-xs font-semibold tracking-[0.2em] uppercase text-[#5F5148] hover:text-[#9E7960] transition-colors"
+        class="group text-left py-4 border-b border-[#E8DFDA] text-xs font-semibold tracking-[0.2em] uppercase text-[#555D78] hover:text-[#B8896E] transition-colors"
       >
 
         <span class="flex items-center justify-between">
@@ -582,14 +576,12 @@
       </button>
 
 
-      <!-- ====================================================
-           ESSENCIAIS
-           ==================================================== -->
+      <!-- ESSENCIAIS -->
 
       <button
         type="button"
         onclick="switchTab('menu'); fecharMenuMobile()"
-        class="group text-left py-4 border-b border-[#E8DED5] text-xs font-semibold tracking-[0.2em] uppercase text-[#5F5148] hover:text-[#9E7960] transition-colors"
+        class="group text-left py-4 border-b border-[#E8DFDA] text-xs font-semibold tracking-[0.2em] uppercase text-[#555D78] hover:text-[#B8896E] transition-colors"
       >
 
         <span class="flex items-center justify-between">
@@ -617,14 +609,12 @@
       </button>
 
 
-      <!-- ====================================================
-           GUIA DE TAMANHOS
-           ==================================================== -->
+      <!-- GUIA DE TAMANHOS -->
 
       <button
         type="button"
         onclick="switchTab('sizes'); fecharMenuMobile()"
-        class="group text-left py-4 border-b border-[#E8DED5] text-xs font-semibold tracking-[0.2em] uppercase text-[#5F5148] hover:text-[#9E7960] transition-colors"
+        class="group text-left py-4 border-b border-[#E8DFDA] text-xs font-semibold tracking-[0.2em] uppercase text-[#555D78] hover:text-[#B8896E] transition-colors"
       >
 
         <span class="flex items-center justify-between">
@@ -652,14 +642,12 @@
       </button>
 
 
-      <!-- ====================================================
-           MEUS PEDIDOS
-           ==================================================== -->
+      <!-- MEUS PEDIDOS -->
 
       <button
         type="button"
         onclick="switchTab('orders'); fecharMenuMobile()"
-        class="group text-left py-4 border-b border-[#E8DED5] text-xs font-semibold tracking-[0.2em] uppercase text-[#5F5148] hover:text-[#9E7960] transition-colors"
+        class="group text-left py-4 border-b border-[#E8DFDA] text-xs font-semibold tracking-[0.2em] uppercase text-[#555D78] hover:text-[#B8896E] transition-colors"
       >
 
         <span class="flex items-center justify-between">
@@ -692,18 +680,16 @@
   </nav>
 
 
-  <!-- ========================================================
-       RODAPÉ DO MENU
-       ======================================================== -->
+  <!-- RODAPÉ DO MENU -->
 
   <div
-    class="absolute bottom-0 left-0 right-0 px-6 py-5 border-t border-[#E8DED5]"
+    class="absolute bottom-0 left-0 right-0 px-6 py-5 border-t border-[#E8DFDA] bg-[#F8F5F2]"
   >
 
     <p
-      class="text-[10px] tracking-[0.18em] uppercase text-[#9E7960] text-center"
+      class="text-[10px] tracking-[0.18em] uppercase text-[#B8896E] text-center"
     >
-      Elegância em cada detalhe
+      Delicadeza que veste sua essência
     </p>
 
   </div>
