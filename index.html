@@ -1359,479 +1359,540 @@
 
 </section>
 
-    <!-- MAIN CONTENT (SESSÃO DE AUTENTICAÇÃO / FORMULÁRIO) -->
-    <main
-      id="main-content"
-      class="w-full bg-white/80 backdrop-blur-xl border border-[#E8D8CF] rounded-3xl shadow-[0_20px_40px_rgba(38,33,30,0.04)] p-6 sm:p-8 transition-all mb-16"
-    >
-      <section id="auth-section" class="hidden">
-        <div id="auth-title" class="text-center mb-6">
-          <h2 class="text-xl sm:text-2xl font-normal font-serif-luxury text-[#26211E] tracking-wide">
-            Sua experiência de conforto e elegância começa aqui.
-          </h2>
-          <p class="text-[#8C7A6B] text-[10px] font-semibold tracking-widest mt-1.5 uppercase" id="store-name-text">
-            Carregando loja...
-          </p>
-        </div>
+    
+<!-- MAIN CONTENT — SERENALIS LINGERIE -->
 
-        <form id="auth-form" class="space-y-4">
-          <div id="group-name" class="hidden">
-            <label class="block text-[10px] font-semibold text-[#8C7A6B] tracking-wider uppercase mb-1">
-              Nome Completo
-            </label>
-            <div class="relative">
-              <input
-                type="text"
-                id="name"
-                class="w-full px-4 py-3 bg-[#FAF6F4]/60 border border-[#E8D8CF] rounded-2xl outline-none focus:ring-1 focus:ring-[#9E7960] focus:border-[#9E7960] focus:bg-white text-[#26211E] text-xs transition-all placeholder:text-stone-400"
-                placeholder="Seu nome completo"
-              />
-            </div>
-          </div>
-
-          <div id="group-phone" class="hidden">
-            <label class="block text-[10px] font-semibold text-[#8C7A6B] tracking-wider uppercase mb-1">
-              WhatsApp
-            </label>
-            <div class="relative">
-              <input
-                type="tel"
-                id="phone"
-                class="w-full px-4 py-3 bg-[#FAF6F4]/60 border border-[#E8D8CF] rounded-2xl outline-none focus:ring-1 focus:ring-[#9E7960] focus:border-[#9E7960] focus:bg-white text-[#26211E] text-xs transition-all placeholder:text-stone-400"
-                placeholder="(00) 00000-0000"
-              />
-            </div>
-          </div>
-
-          <div>
-            <label class="block text-[10px] font-semibold text-[#8C7A6B] tracking-wider uppercase mb-1">
-              E-mail
-            </label>
-            <input
-              type="email"
-              id="email"
-              required
-              class="w-full px-4 py-3 bg-[#FAF6F4]/60 border border-[#E8D8CF] rounded-2xl outline-none focus:ring-1 focus:ring-[#9E7960] focus:border-[#9E7960] focus:bg-white text-[#26211E] text-xs transition-all placeholder:text-stone-400"
-              placeholder="seu@email.com"
-            />
-          </div>
-
-          <div>
-            <label class="block text-[10px] font-semibold text-[#8C7A6B] tracking-wider uppercase mb-1">
-              Senha
-            </label>
-            <input
-              type="password"
-              id="password"
-              required
-              class="w-full px-4 py-3 bg-[#FAF6F4]/60 border border-[#E8D8CF] rounded-2xl outline-none focus:ring-1 focus:ring-[#9E7960] focus:border-[#9E7960] focus:bg-white text-[#26211E] text-xs transition-all placeholder:text-stone-400"
-              placeholder="••••••••"
-            />
-          </div>
-
-          <button
-            type="submit"
-            id="btn-submit"
-            class="w-full bg-ifood-red text-white font-medium tracking-wider py-3.5 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 mt-5 text-xs uppercase active:scale-[0.99]"
-          >
-            Continuar
-          </button>
-        </form>
-
-        <div class="text-center mt-5 pt-4 border-t border-[#E8D8CF]/50">
-          <p class="text-xs text-stone-500">
-            <span id="toggle-text">Ainda não possui conta?</span>
-            <button id="toggle-auth" class="text-[#26211E] font-semibold underline underline-offset-4 ml-1 hover:text-[#9E7960] transition-colors">
-              Criar conta
-            </button>
-          </p>
-        </div>
-      </section>
-
-      <!-- ========================================== -->
-<!-- ✨ MAIS VENDIDOS - ESSENZA ÍNTIMAS -->
-<!-- ========================================== -->
-
-<section
-  id="mais-vendidos-section"
-  class="hidden mb-12"
+<main
+  id="main-content"
+  class="w-full bg-white/80 backdrop-blur-xl border border-[#E8DFDA] rounded-3xl shadow-[0_20px_40px_rgba(38,47,91,0.04)] p-6 sm:p-8 transition-all mb-16"
 >
 
-  <!-- Cabeçalho -->
-  <div class="flex items-center gap-3 mb-6">
+  <!-- AUTENTICAÇÃO -->
 
-    <div>
+  <section id="auth-section" class="hidden">
 
-      <div class="flex items-center gap-2">
+    <div id="auth-title" class="text-center mb-6">
 
-        <span class="text-base">
-          ✨
-        </span>
-
-        <span
-          class="
-            text-[10px]
-            font-semibold
-            uppercase
-            tracking-[0.2em]
-            text-[#9E7960]
-          "
-        >
-          Destaques
-        </span>
-
-      </div>
-
-      <h3
-        class="
-          font-serif-luxury
-          text-xl
-          sm:text-2xl
-          font-normal
-          text-[#26211E]
-          italic
-          tracking-wide
-        "
-      >
-        Mais Vendidos
-      </h3>
-
-    </div>
-
-    <div
-      class="
-        h-[1px]
-        flex-1
-        bg-gradient-to-r
-        from-[#E8D8CF]
-        to-transparent
-      "
-    ></div>
-
-  </div>
-
-
-  <!-- Subtítulo -->
-
-  <p
-    class="
-      text-xs
-      text-[#8C7A6B]
-      font-light
-      mb-5
-    "
-  >
-    As peças favoritas das nossas clientes.
-  </p>
-
-
-  <!-- Produtos -->
-
-  <div
-    id="mais-vendidos-container"
-    class="
-      grid
-      grid-cols-2
-      sm:grid-cols-3
-      md:grid-cols-3
-      gap-3
-      sm:gap-5
-    "
-  ></div>
-
-</section>
- 
-    <!-- ========================================== -->
-<!-- SEÇÃO DE CATÁLOGO & PRODUTOS - ESSENZA ÍNTIMAS -->
-<!-- ========================================== -->
-<div id="menu-section" class="max-w-2xl mx-auto px-4 py-6">
-  <!-- Título do Catálogo -->
-  <div class="flex justify-between items-center mb-8">
-    <h2
-      class="text-xl font-light tracking-tight text-stone-800 border-b-2 border-stone-800 pb-1 font-serif italic"
-    >
-      Coleções & Peças
-    </h2>
-    <div class="text-stone-600 flex items-center gap-1.5">
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
-      <span class="text-xs font-semibold tracking-wider uppercase text-stone-500">Envio Exclusivo</span>
-    </div>
-  </div>
-
-  <div
-    class="sticky top-0 bg-white/90 backdrop-blur-md z-40 mb-8 py-3 overflow-x-auto whitespace-nowrap scrollbar-none flex gap-3 border-b border-rose-100/60"
-    id="categories-nav"
-  ></div>
-
-  <!-- Container de Categorias -->
-  <div id="categories-container" class="space-y-12">
-    <!-- Estado de Loading Refinado -->
-    <div
-      class="flex flex-col items-center justify-center py-20 bg-stone-50/60 rounded-3xl border border-dashed border-rose-100"
-    >
-      <div class="relative mb-4">
-        <!-- Ícone Elegante Pulsando -->
-        <div class="text-3xl animate-bounce">✨</div>
-        <div class="absolute -bottom-1 -right-1">
-          <span class="flex h-3 w-3">
-            <span
-              class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-300 opacity-75"
-            ></span>
-            <span
-              class="relative inline-flex rounded-full h-3 w-3 bg-rose-400"
-            ></span>
-          </span>
-        </div>
-      </div>
-      <p class="text-stone-700 font-medium tracking-tight text-sm">
-        Buscando as melhores coleções...
-      </p>
-      <p class="text-stone-400 text-xs mt-1 font-light">
-        Carregando catálogo exclusivo
-      </p>
-    </div>
-  </div>
-</div>
-
-      <!-- ========================================== -->
-<!-- SEÇÃO DE DETALHES DO PRODUTO - ESSENZA ÍNTIMAS -->
-<!-- ========================================== -->
-<div id="details-section" class="hidden max-w-2xl mx-auto px-4 py-6">
-  <button
-    onclick="switchTab('menu')"
-    class="text-xs font-medium text-stone-600 bg-stone-100 hover:bg-stone-200 border border-stone-200/80 mb-6 flex items-center gap-2 px-4 py-2 rounded-full transition-all"
-  >
-    ← Voltar
-  </button>
-  
-  <div id="product-details-content"></div>
-  
-  <div class="mt-8 border-t border-rose-100/60 pt-6">
-    <button
-  type="button"
-  id="btn-add-cart"
-  class="w-full bg-ifood-red text-white font-medium py-4 rounded-2xl shadow-sm hover:shadow-md transition-all flex justify-between px-6 items-center text-sm tracking-wide"
->
-  <span>Adicionar à Sacola</span>
-  <span id="detail-total-price" class="font-semibold">R$ 0,00</span>
-</button>
-  </div>
-</div>
-
-      <!-- ==========================================================
-     TABELA DE TAMANHOS — ESSENZA ÍNTIMAS
-     ========================================================== -->
-<section id="tabela-tamanhos" class="hidden py-16 px-4 bg-[#F8F5F2]">
-  <div class="max-w-5xl mx-auto">
-
-    <!-- Cabeçalho -->
-    <div class="text-center mb-10">
-      <span
-        class="inline-block text-[#9E7960] text-sm font-semibold tracking-[0.2em] uppercase mb-3"
-      >
-        Guia de medidas
-      </span>
-
-      <h2
-        class="text-3xl sm:text-4xl font-bold text-[#26211E] mb-4"
-      >
-        Encontre o tamanho ideal
+      <h2 class="text-xl sm:text-2xl font-normal font-serif-luxury text-[#262F5B] tracking-wide">
+        Sua experiência de conforto e elegância começa aqui.
       </h2>
 
       <p
-        class="max-w-2xl mx-auto text-[#6F625A] text-sm sm:text-base leading-relaxed"
+        class="text-[#B8896E] text-[10px] font-semibold tracking-widest mt-1.5 uppercase"
+        id="store-name-text"
       >
-        Confira nossas medidas para escolher o tamanho que proporciona
-        o melhor caimento, conforto e segurança para você.
+        Carregando loja...
       </p>
+
     </div>
 
-    <!-- Card -->
-    <div
-      class="bg-white rounded-2xl shadow-sm border border-[#E8DED5] overflow-hidden"
-    >
 
-      <!-- Título da tabela -->
-      <div
-        class="px-5 sm:px-8 py-5 border-b border-[#E8DED5] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2"
-      >
-        <div>
-          <h3 class="text-lg font-bold text-[#26211E]">
-            Medidas femininas
-          </h3>
+    <form id="auth-form" class="space-y-4">
 
-          <p class="text-sm text-[#8A7A70] mt-1">
-            Medidas aproximadas em centímetros
-          </p>
+      <div id="group-name" class="hidden">
+
+        <label class="block text-[10px] font-semibold text-[#68718D] tracking-wider uppercase mb-1">
+          Nome Completo
+        </label>
+
+        <div class="relative">
+
+          <input
+            type="text"
+            id="name"
+            class="w-full px-4 py-3 bg-[#F8F5F2]/70 border border-[#E8DFDA] rounded-2xl outline-none focus:ring-1 focus:ring-[#7BA7C9] focus:border-[#7BA7C9] focus:bg-white text-[#262F5B] text-xs transition-all placeholder:text-stone-400"
+            placeholder="Seu nome completo"
+          />
+
         </div>
 
-        <span
-          class="text-xs font-semibold text-[#9E7960] bg-[#F8F5F2] px-3 py-2 rounded-full"
-        >
-          Essenza Íntimas
+      </div>
+
+
+      <div id="group-phone" class="hidden">
+
+        <label class="block text-[10px] font-semibold text-[#68718D] tracking-wider uppercase mb-1">
+          WhatsApp
+        </label>
+
+        <div class="relative">
+
+          <input
+            type="tel"
+            id="phone"
+            class="w-full px-4 py-3 bg-[#F8F5F2]/70 border border-[#E8DFDA] rounded-2xl outline-none focus:ring-1 focus:ring-[#7BA7C9] focus:border-[#7BA7C9] focus:bg-white text-[#262F5B] text-xs transition-all placeholder:text-stone-400"
+            placeholder="(00) 00000-0000"
+          />
+
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <label class="block text-[10px] font-semibold text-[#68718D] tracking-wider uppercase mb-1">
+          E-mail
+        </label>
+
+        <input
+          type="email"
+          id="email"
+          required
+          class="w-full px-4 py-3 bg-[#F8F5F2]/70 border border-[#E8DFDA] rounded-2xl outline-none focus:ring-1 focus:ring-[#7BA7C9] focus:border-[#7BA7C9] focus:bg-white text-[#262F5B] text-xs transition-all placeholder:text-stone-400"
+          placeholder="seu@email.com"
+        />
+
+      </div>
+
+
+      <div>
+
+        <label class="block text-[10px] font-semibold text-[#68718D] tracking-wider uppercase mb-1">
+          Senha
+        </label>
+
+        <input
+          type="password"
+          id="password"
+          required
+          class="w-full px-4 py-3 bg-[#F8F5F2]/70 border border-[#E8DFDA] rounded-2xl outline-none focus:ring-1 focus:ring-[#7BA7C9] focus:border-[#7BA7C9] focus:bg-white text-[#262F5B] text-xs transition-all placeholder:text-stone-400"
+          placeholder="••••••••"
+        />
+
+      </div>
+
+
+      <button
+        type="submit"
+        id="btn-submit"
+        class="w-full bg-ifood-red text-white font-medium tracking-wider py-3.5 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 mt-5 text-xs uppercase active:scale-[0.99]"
+      >
+        Continuar
+      </button>
+
+    </form>
+
+
+    <div class="text-center mt-5 pt-4 border-t border-[#E8DFDA]/70">
+
+      <p class="text-xs text-stone-500">
+
+        <span id="toggle-text">
+          Ainda não possui conta?
         </span>
-      </div>
 
-      <!-- Tabela -->
-      <div class="overflow-x-auto">
-        <table class="w-full min-w-[600px] text-sm text-left">
+        <button
+          id="toggle-auth"
+          class="text-[#262F5B] font-semibold underline underline-offset-4 ml-1 hover:text-[#B8896E] transition-colors"
+        >
+          Criar conta
+        </button>
 
-          <thead>
-            <tr class="bg-[#26211E] text-white">
-              <th class="px-5 py-4 font-semibold">
-                Tamanho
-              </th>
-
-              <th class="px-5 py-4 font-semibold">
-                Busto
-              </th>
-
-              <th class="px-5 py-4 font-semibold">
-                Cintura
-              </th>
-
-              <th class="px-5 py-4 font-semibold">
-                Quadril
-              </th>
-            </tr>
-          </thead>
-
-          <tbody class="divide-y divide-[#E8DED5]">
-
-            <!-- PP -->
-            <tr class="hover:bg-[#F8F5F2] transition-colors">
-              <td class="px-5 py-4">
-                <span class="font-bold text-[#9E7960]">
-                  PP
-                </span>
-              </td>
-              <td class="px-5 py-4 text-[#514741]">78 – 82 cm</td>
-              <td class="px-5 py-4 text-[#514741]">60 – 64 cm</td>
-              <td class="px-5 py-4 text-[#514741]">84 – 88 cm</td>
-            </tr>
-
-            <!-- P -->
-            <tr class="hover:bg-[#F8F5F2] transition-colors">
-              <td class="px-5 py-4">
-                <span class="font-bold text-[#9E7960]">
-                  P
-                </span>
-              </td>
-              <td class="px-5 py-4 text-[#514741]">83 – 87 cm</td>
-              <td class="px-5 py-4 text-[#514741]">65 – 69 cm</td>
-              <td class="px-5 py-4 text-[#514741]">89 – 93 cm</td>
-            </tr>
-
-            <!-- M -->
-            <tr class="hover:bg-[#F8F5F2] transition-colors">
-              <td class="px-5 py-4">
-                <span class="font-bold text-[#9E7960]">
-                  M
-                </span>
-              </td>
-              <td class="px-5 py-4 text-[#514741]">88 – 92 cm</td>
-              <td class="px-5 py-4 text-[#514741]">70 – 74 cm</td>
-              <td class="px-5 py-4 text-[#514741]">94 – 98 cm</td>
-            </tr>
-
-            <!-- G -->
-            <tr class="hover:bg-[#F8F5F2] transition-colors">
-              <td class="px-5 py-4">
-                <span class="font-bold text-[#9E7960]">
-                  G
-                </span>
-              </td>
-              <td class="px-5 py-4 text-[#514741]">93 – 97 cm</td>
-              <td class="px-5 py-4 text-[#514741]">75 – 79 cm</td>
-              <td class="px-5 py-4 text-[#514741]">99 – 103 cm</td>
-            </tr>
-
-            <!-- GG -->
-            <tr class="hover:bg-[#F8F5F2] transition-colors">
-              <td class="px-5 py-4">
-                <span class="font-bold text-[#9E7960]">
-                  GG
-                </span>
-              </td>
-              <td class="px-5 py-4 text-[#514741]">98 – 103 cm</td>
-              <td class="px-5 py-4 text-[#514741]">80 – 85 cm</td>
-              <td class="px-5 py-4 text-[#514741]">104 – 109 cm</td>
-            </tr>
-
-            <!-- XG -->
-            <tr class="hover:bg-[#F8F5F2] transition-colors">
-              <td class="px-5 py-4">
-                <span class="font-bold text-[#9E7960]">
-                  XG
-                </span>
-              </td>
-              <td class="px-5 py-4 text-[#514741]">104 – 110 cm</td>
-              <td class="px-5 py-4 text-[#514741]">86 – 92 cm</td>
-              <td class="px-5 py-4 text-[#514741]">110 – 116 cm</td>
-            </tr>
-
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Rodapé -->
-      <div
-        class="px-5 sm:px-8 py-6 bg-[#F8F5F2] border-t border-[#E8DED5]"
-      >
-        <div class="flex gap-3 items-start">
-
-          <div
-            class="w-9 h-9 shrink-0 rounded-full bg-[#E8DED5] flex items-center justify-center text-[#9E7960]"
-          >
-            <svg
-              class="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.8"
-                d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z"
-              />
-            </svg>
-          </div>
-
-          <div>
-            <h4 class="font-semibold text-[#26211E] text-sm">
-              Como medir?
-            </h4>
-
-            <p class="text-sm text-[#6F625A] mt-1 leading-relaxed">
-              Utilize uma fita métrica sobre o corpo, sem apertar.
-              Para maior precisão, faça as medidas usando roupas leves
-              ou diretamente sobre a pele.
-            </p>
-          </div>
-
-        </div>
-      </div>
+      </p>
 
     </div>
 
-    <!-- Observação -->
-    <p class="text-center text-xs text-[#8A7A70] mt-5">
-      As medidas podem variar de acordo com o modelo e a elasticidade
-      da peça. Em caso de dúvida, recomendamos escolher o tamanho
-      conforme suas medidas corporais.
+  </section>
+
+
+  <!-- MAIS VENDIDOS — SERENALIS -->
+
+  <section
+    id="mais-vendidos-section"
+    class="hidden mb-12"
+  >
+
+    <!-- Cabeçalho -->
+
+    <div class="flex items-center gap-3 mb-6">
+
+      <div>
+
+        <div class="flex items-center gap-2">
+
+          <span class="text-base">
+            ✨
+          </span>
+
+          <span class="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#B8896E]">
+            Destaques
+          </span>
+
+        </div>
+
+        <h3 class="font-serif-luxury text-xl sm:text-2xl font-normal text-[#262F5B] italic tracking-wide">
+          Mais Vendidos
+        </h3>
+
+      </div>
+
+      <div class="h-[1px] flex-1 bg-gradient-to-r from-[#D7A89A] to-transparent"></div>
+
+    </div>
+
+
+    <!-- Subtítulo -->
+
+    <p class="text-xs text-[#68718D] font-light mb-5">
+      As peças favoritas das nossas clientes.
     </p>
 
-  </div>
-</section>
 
-<!-- ============================================================
-     BENEFÍCIOS — ESSENZA ÍNTIMAS
+    <!-- Produtos -->
+
+    <div
+      id="mais-vendidos-container"
+      class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-3 sm:gap-5"
+    ></div>
+
+  </section>
+
+
+  <!-- CATÁLOGO E PRODUTOS -->
+
+  <div id="menu-section" class="max-w-2xl mx-auto px-4 py-6">
+
+    <!-- Título -->
+
+    <div class="flex justify-between items-center mb-8">
+
+      <h2 class="text-xl font-light tracking-tight text-[#262F5B] border-b-2 border-[#262F5B] pb-1 font-serif-luxury italic">
+        Coleções & Peças
+      </h2>
+
+      <div class="text-[#68718D] flex items-center gap-1.5">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles">
+          <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+        </svg>
+
+        <span class="text-xs font-semibold tracking-wider uppercase text-[#68718D]">
+          Envio Exclusivo
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <!-- Categorias -->
+
+    <div
+      class="sticky top-0 bg-white/90 backdrop-blur-md z-40 mb-8 py-3 overflow-x-auto whitespace-nowrap scrollbar-none flex gap-3 border-b border-[#D7A89A]/40"
+      id="categories-nav"
+    ></div>
+
+
+    <!-- Container de Categorias -->
+
+    <div id="categories-container" class="space-y-12">
+
+      <!-- Loading -->
+
+      <div class="flex flex-col items-center justify-center py-20 bg-[#F8F5F2]/70 rounded-3xl border border-dashed border-[#D7A89A]/60">
+
+        <div class="relative mb-4">
+
+          <div class="text-3xl animate-bounce">
+            ✨
+          </div>
+
+          <div class="absolute -bottom-1 -right-1">
+
+            <span class="flex h-3 w-3">
+
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#7BA7C9] opacity-75"></span>
+
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-[#7BA7C9]"></span>
+
+            </span>
+
+          </div>
+
+        </div>
+
+        <p class="text-[#262F5B] font-medium tracking-tight text-sm">
+          Buscando as melhores coleções...
+        </p>
+
+        <p class="text-[#9296A8] text-xs mt-1 font-light">
+          Carregando catálogo exclusivo
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- DETALHES DO PRODUTO -->
+
+  <div id="details-section" class="hidden max-w-2xl mx-auto px-4 py-6">
+
+    <button
+      onclick="switchTab('menu')"
+      class="text-xs font-medium text-[#555D78] bg-[#F0EFF3] hover:bg-[#E5E5ED] border border-[#DADCE6] mb-6 flex items-center gap-2 px-4 py-2 rounded-full transition-all"
+    >
+      ← Voltar
+    </button>
+
+    <div id="product-details-content"></div>
+
+    <div class="mt-8 border-t border-[#D7A89A]/40 pt-6">
+
+      <button
+        type="button"
+        id="btn-add-cart"
+        class="w-full bg-ifood-red text-white font-medium py-4 rounded-2xl shadow-sm hover:shadow-md transition-all flex justify-between px-6 items-center text-sm tracking-wide"
+      >
+
+        <span>Adicionar à Sacola</span>
+
+        <span id="detail-total-price" class="font-semibold">
+          R$ 0,00
+        </span>
+
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- TABELA DE TAMANHOS — SERENALIS -->
+
+  <section id="tabela-tamanhos" class="hidden py-16 px-4 bg-[#F8F5F2]">
+
+    <div class="max-w-5xl mx-auto">
+
+      <!-- Cabeçalho -->
+
+      <div class="text-center mb-10">
+
+        <span class="inline-block text-[#B8896E] text-sm font-semibold tracking-[0.2em] uppercase mb-3">
+          Guia de medidas
+        </span>
+
+        <h2 class="text-3xl sm:text-4xl font-bold text-[#262F5B] mb-4 font-serif-luxury">
+          Encontre o tamanho ideal
+        </h2>
+
+        <p class="max-w-2xl mx-auto text-[#68718D] text-sm sm:text-base leading-relaxed">
+          Confira nossas medidas para escolher o tamanho que proporciona
+          o melhor caimento, conforto e segurança para você.
+        </p>
+
+      </div>
+
+
+      <!-- Card -->
+
+      <div class="bg-white rounded-2xl shadow-sm border border-[#E8DFDA] overflow-hidden">
+
+        <!-- Título da tabela -->
+
+        <div class="px-5 sm:px-8 py-5 border-b border-[#E8DFDA] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+
+          <div>
+
+            <h3 class="text-lg font-bold text-[#262F5B]">
+              Medidas femininas
+            </h3>
+
+            <p class="text-sm text-[#9296A8] mt-1">
+              Medidas aproximadas em centímetros
+            </p>
+
+          </div>
+
+          <span class="text-xs font-semibold text-[#B8896E] bg-[#F8F5F2] px-3 py-2 rounded-full">
+            Serenalis Lingerie
+          </span>
+
+        </div>
+
+
+        <!-- Tabela -->
+
+        <div class="overflow-x-auto">
+
+          <table class="w-full min-w-[600px] text-sm text-left">
+
+            <thead>
+
+              <tr class="bg-[#262F5B] text-white">
+
+                <th class="px-5 py-4 font-semibold">
+                  Tamanho
+                </th>
+
+                <th class="px-5 py-4 font-semibold">
+                  Busto
+                </th>
+
+                <th class="px-5 py-4 font-semibold">
+                  Cintura
+                </th>
+
+                <th class="px-5 py-4 font-semibold">
+                  Quadril
+                </th>
+
+              </tr>
+
+            </thead>
+
+
+            <tbody class="divide-y divide-[#E8DFDA]">
+
+              <!-- PP -->
+
+              <tr class="hover:bg-[#F8F5F2] transition-colors">
+                <td class="px-5 py-4">
+                  <span class="font-bold text-[#B8896E]">PP</span>
+                </td>
+                <td class="px-5 py-4 text-[#555D78]">78 – 82 cm</td>
+                <td class="px-5 py-4 text-[#555D78]">60 – 64 cm</td>
+                <td class="px-5 py-4 text-[#555D78]">84 – 88 cm</td>
+              </tr>
+
+
+              <!-- P -->
+
+              <tr class="hover:bg-[#F8F5F2] transition-colors">
+                <td class="px-5 py-4">
+                  <span class="font-bold text-[#B8896E]">P</span>
+                </td>
+                <td class="px-5 py-4 text-[#555D78]">83 – 87 cm</td>
+                <td class="px-5 py-4 text-[#555D78]">65 – 69 cm</td>
+                <td class="px-5 py-4 text-[#555D78]">89 – 93 cm</td>
+              </tr>
+
+
+              <!-- M -->
+
+              <tr class="hover:bg-[#F8F5F2] transition-colors">
+                <td class="px-5 py-4">
+                  <span class="font-bold text-[#B8896E]">M</span>
+                </td>
+                <td class="px-5 py-4 text-[#555D78]">88 – 92 cm</td>
+                <td class="px-5 py-4 text-[#555D78]">70 – 74 cm</td>
+                <td class="px-5 py-4 text-[#555D78]">94 – 98 cm</td>
+              </tr>
+
+
+              <!-- G -->
+
+              <tr class="hover:bg-[#F8F5F2] transition-colors">
+                <td class="px-5 py-4">
+                  <span class="font-bold text-[#B8896E]">G</span>
+                </td>
+                <td class="px-5 py-4 text-[#555D78]">93 – 97 cm</td>
+                <td class="px-5 py-4 text-[#555D78]">75 – 79 cm</td>
+                <td class="px-5 py-4 text-[#555D78]">99 – 103 cm</td>
+              </tr>
+
+
+              <!-- GG -->
+
+              <tr class="hover:bg-[#F8F5F2] transition-colors">
+                <td class="px-5 py-4">
+                  <span class="font-bold text-[#B8896E]">GG</span>
+                </td>
+                <td class="px-5 py-4 text-[#555D78]">98 – 103 cm</td>
+                <td class="px-5 py-4 text-[#555D78]">80 – 85 cm</td>
+                <td class="px-5 py-4 text-[#555D78]">104 – 109 cm</td>
+              </tr>
+
+
+              <!-- XG -->
+
+              <tr class="hover:bg-[#F8F5F2] transition-colors">
+                <td class="px-5 py-4">
+                  <span class="font-bold text-[#B8896E]">XG</span>
+                </td>
+                <td class="px-5 py-4 text-[#555D78]">104 – 110 cm</td>
+                <td class="px-5 py-4 text-[#555D78]">86 – 92 cm</td>
+                <td class="px-5 py-4 text-[#555D78]">110 – 116 cm</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <!-- Rodapé -->
+
+        <div class="px-5 sm:px-8 py-6 bg-[#F8F5F2] border-t border-[#E8DFDA]">
+
+          <div class="flex gap-3 items-start">
+
+            <div class="w-9 h-9 shrink-0 rounded-full bg-[#E5EAF1] flex items-center justify-center text-[#262F5B]">
+
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z"
+                />
+
+              </svg>
+
+            </div>
+
+
+            <div>
+
+              <h4 class="font-semibold text-[#262F5B] text-sm">
+                Como medir?
+              </h4>
+
+              <p class="text-sm text-[#68718D] mt-1 leading-relaxed">
+                Utilize uma fita métrica sobre o corpo, sem apertar.
+                Para maior precisão, faça as medidas usando roupas leves
+                ou diretamente sobre a pele.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Observação -->
+
+      <p class="text-center text-xs text-[#9296A8] mt-5">
+        As medidas podem variar de acordo com o modelo e a elasticidade
+        da peça. Em caso de dúvida, recomendamos escolher o tamanho
+        conforme suas medidas corporais.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- ============================================================
+     BENEFÍCIOS — SERENALIS LINGERIE
 ============================================================ -->
 
-<section 
-id="benefits-section"
-class="w-full py-16 sm:py-20 lg:py-24">
+<section
+  id="benefits-section"
+  class="w-full py-16 sm:py-20 lg:py-24 bg-[#F8F5F2]"
+>
 
   <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -1849,15 +1910,15 @@ class="w-full py-16 sm:py-20 lg:py-24">
           font-semibold
           tracking-[0.3em]
           uppercase
-          text-[#9E7960]
+          text-[#B8896F]
         "
       >
 
-        <span class="w-8 h-px bg-[#D8C2B5]"></span>
+        <span class="w-8 h-px bg-[#D7A89A]"></span>
 
-        Essenza Íntimas
+        Serenalis Lingerie
 
-        <span class="w-8 h-px bg-[#D8C2B5]"></span>
+        <span class="w-8 h-px bg-[#D7A89A]"></span>
 
       </span>
 
@@ -1871,11 +1932,11 @@ class="w-full py-16 sm:py-20 lg:py-24">
           font-normal
           italic
           tracking-wide
-          text-[#26211E]
+          text-[#262F5B]
         "
       >
         Detalhes que fazem
-        <span class="text-[#9E7960]">a diferença.</span>
+        <span class="text-[#B8896F]">a diferença.</span>
       </h2>
 
       <p
@@ -1885,11 +1946,11 @@ class="w-full py-16 sm:py-20 lg:py-24">
           sm:text-sm
           font-light
           leading-relaxed
-          text-[#8C7A6B]
+          text-[#262F5B]/75
         "
       >
         Tudo pensado para transformar sua experiência em algo
-        tão especial quanto cada peça da Essenza.
+        tão especial quanto cada peça da Serenalis.
       </p>
 
     </div>
@@ -1919,14 +1980,14 @@ class="w-full py-16 sm:py-20 lg:py-24">
           overflow-hidden
           rounded-3xl
           border
-          border-[#E8D8CF]
-          bg-[#FBF8F6]
+          border-[#D7A89A]/50
+          bg-white
           p-7
           sm:p-8
           transition-all
           duration-500
           hover:-translate-y-1
-          hover:shadow-[0_20px_45px_rgba(38,33,30,0.08)]
+          hover:shadow-[0_20px_45px_rgba(38,47,91,0.10)]
         "
       >
 
@@ -1935,11 +1996,11 @@ class="w-full py-16 sm:py-20 lg:py-24">
             w-12
             h-12
             rounded-full
-            bg-[#F1E5DF]
+            bg-[#7BA7C9]/15
             flex
             items-center
             justify-center
-            text-[#9E7960]
+            text-[#262F5B]
             mb-7
             transition-transform
             duration-500
@@ -1953,7 +2014,7 @@ class="w-full py-16 sm:py-20 lg:py-24">
           class="
             font-serif-luxury
             text-xl
-            text-[#26211E]
+            text-[#262F5B]
             mb-3
           "
         >
@@ -1966,7 +2027,7 @@ class="w-full py-16 sm:py-20 lg:py-24">
             sm:text-sm
             font-light
             leading-relaxed
-            text-[#8C7A6B]
+            text-[#262F5B]/75
           "
         >
           Peças escolhidas com atenção aos detalhes,
@@ -1982,7 +2043,7 @@ class="w-full py-16 sm:py-20 lg:py-24">
             h-24
             rounded-full
             border
-            border-[#E8D8CF]/60
+            border-[#D7A89A]/50
           "
         ></span>
 
@@ -2000,14 +2061,14 @@ class="w-full py-16 sm:py-20 lg:py-24">
           overflow-hidden
           rounded-3xl
           border
-          border-[#E8D8CF]
-          bg-[#FBF8F6]
+          border-[#D7A89A]/50
+          bg-white
           p-7
           sm:p-8
           transition-all
           duration-500
           hover:-translate-y-1
-          hover:shadow-[0_20px_45px_rgba(38,33,30,0.08)]
+          hover:shadow-[0_20px_45px_rgba(38,47,91,0.10)]
         "
       >
 
@@ -2016,11 +2077,11 @@ class="w-full py-16 sm:py-20 lg:py-24">
             w-12
             h-12
             rounded-full
-            bg-[#F1E5DF]
+            bg-[#D7A89A]/20
             flex
             items-center
             justify-center
-            text-[#9E7960]
+            text-[#B8896F]
             mb-7
             transition-transform
             duration-500
@@ -2034,7 +2095,7 @@ class="w-full py-16 sm:py-20 lg:py-24">
           class="
             font-serif-luxury
             text-xl
-            text-[#26211E]
+            text-[#262F5B]
             mb-3
           "
         >
@@ -2047,7 +2108,7 @@ class="w-full py-16 sm:py-20 lg:py-24">
             sm:text-sm
             font-light
             leading-relaxed
-            text-[#8C7A6B]
+            text-[#262F5B]/75
           "
         >
           Modelagens pensadas para valorizar sua
@@ -2063,7 +2124,7 @@ class="w-full py-16 sm:py-20 lg:py-24">
             h-24
             rounded-full
             border
-            border-[#E8D8CF]/60
+            border-[#D7A89A]/50
           "
         ></span>
 
@@ -2081,14 +2142,14 @@ class="w-full py-16 sm:py-20 lg:py-24">
           overflow-hidden
           rounded-3xl
           border
-          border-[#E8D8CF]
-          bg-[#FBF8F6]
+          border-[#D7A89A]/50
+          bg-white
           p-7
           sm:p-8
           transition-all
           duration-500
           hover:-translate-y-1
-          hover:shadow-[0_20px_45px_rgba(38,33,30,0.08)]
+          hover:shadow-[0_20px_45px_rgba(38,47,91,0.10)]
         "
       >
 
@@ -2097,11 +2158,11 @@ class="w-full py-16 sm:py-20 lg:py-24">
             w-12
             h-12
             rounded-full
-            bg-[#F1E5DF]
+            bg-[#7BA7C9]/15
             flex
             items-center
             justify-center
-            text-[#9E7960]
+            text-[#262F5B]
             mb-7
             transition-transform
             duration-500
@@ -2115,7 +2176,7 @@ class="w-full py-16 sm:py-20 lg:py-24">
           class="
             font-serif-luxury
             text-xl
-            text-[#26211E]
+            text-[#262F5B]
             mb-3
           "
         >
@@ -2128,7 +2189,7 @@ class="w-full py-16 sm:py-20 lg:py-24">
             sm:text-sm
             font-light
             leading-relaxed
-            text-[#8C7A6B]
+            text-[#262F5B]/75
           "
         >
           Seus dados e informações são tratados
@@ -2144,7 +2205,7 @@ class="w-full py-16 sm:py-20 lg:py-24">
             h-24
             rounded-full
             border
-            border-[#E8D8CF]/60
+            border-[#D7A89A]/50
           "
         ></span>
 
@@ -2162,14 +2223,14 @@ class="w-full py-16 sm:py-20 lg:py-24">
           overflow-hidden
           rounded-3xl
           border
-          border-[#E8D8CF]
-          bg-[#FBF8F6]
+          border-[#D7A89A]/50
+          bg-white
           p-7
           sm:p-8
           transition-all
           duration-500
           hover:-translate-y-1
-          hover:shadow-[0_20px_45px_rgba(38,33,30,0.08)]
+          hover:shadow-[0_20px_45px_rgba(38,47,91,0.10)]
         "
       >
 
@@ -2178,11 +2239,11 @@ class="w-full py-16 sm:py-20 lg:py-24">
             w-12
             h-12
             rounded-full
-            bg-[#F1E5DF]
+            bg-[#D7A89A]/20
             flex
             items-center
             justify-center
-            text-[#9E7960]
+            text-[#B8896F]
             mb-7
             transition-transform
             duration-500
@@ -2196,7 +2257,7 @@ class="w-full py-16 sm:py-20 lg:py-24">
           class="
             font-serif-luxury
             text-xl
-            text-[#26211E]
+            text-[#262F5B]
             mb-3
           "
         >
@@ -2209,7 +2270,7 @@ class="w-full py-16 sm:py-20 lg:py-24">
             sm:text-sm
             font-light
             leading-relaxed
-            text-[#8C7A6B]
+            text-[#262F5B]/75
           "
         >
           Receba suas peças com praticidade,
@@ -2225,7 +2286,7 @@ class="w-full py-16 sm:py-20 lg:py-24">
             h-24
             rounded-full
             border
-            border-[#E8D8CF]/60
+            border-[#D7A89A]/50
           "
         ></span>
 
@@ -2233,17 +2294,16 @@ class="w-full py-16 sm:py-20 lg:py-24">
 
     </div>
 
-  </div>
-
 </section>
 
-<!-- ============================================================
-     POR QUE ESSENZA — HISTÓRIA DA MARCA
+  <!-- ============================================================
+     POR QUE SERENALIS — HISTÓRIA DA MARCA
 ============================================================ -->
 
-<section 
-id="why-essenza-section"
-class="w-full py-16 sm:py-20 lg:py-28 bg-[#F8F3F0]">
+<section
+  id="why-essenza-section"
+  class="w-full py-16 sm:py-20 lg:py-28 bg-[#F8F5F2]"
+>
 
   <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -2275,10 +2335,9 @@ class="w-full py-16 sm:py-20 lg:py-28 bg-[#F8F3F0]">
             h-full
             rounded-[2rem]
             border
-            border-[#D8C2B5]
+            border-[#D7A89A]
           "
         ></div>
-
 
         <!-- Imagem -->
 
@@ -2288,14 +2347,14 @@ class="w-full py-16 sm:py-20 lg:py-28 bg-[#F8F3F0]">
             overflow-hidden
             rounded-[2rem]
             aspect-[4/5]
-            bg-[#E8D8CF]
-            shadow-[0_25px_60px_rgba(38,33,30,0.12)]
+            bg-[#D7A89A]/20
+            shadow-[0_25px_60px_rgba(38,47,91,0.12)]
           "
         >
 
           <img
-            src="logoessenzaintimas.png"
-            alt="Essenza Íntimas — Moda íntima sofisticada"
+            src="logoessenz intimas.png"
+            alt="Serenalis Lingerie — Delicadeza que veste sua essência"
             class="
               w-full
               h-full
@@ -2306,7 +2365,6 @@ class="w-full py-16 sm:py-20 lg:py-28 bg-[#F8F3F0]">
             "
           />
 
-
           <!-- Gradiente -->
 
           <div
@@ -2314,13 +2372,12 @@ class="w-full py-16 sm:py-20 lg:py-28 bg-[#F8F3F0]">
               absolute
               inset-0
               bg-gradient-to-t
-              from-[#26211E]/35
+              from-[#262F5B]/40
               via-transparent
               to-transparent
               pointer-events-none
             "
           ></div>
-
 
           <!-- Selo -->
 
@@ -2336,7 +2393,7 @@ class="w-full py-16 sm:py-20 lg:py-28 bg-[#F8F3F0]">
               px-5
               py-4
               rounded-2xl
-              bg-white/10
+              bg-[#262F5B]/30
               backdrop-blur-md
               border
               border-white/20
@@ -2350,10 +2407,10 @@ class="w-full py-16 sm:py-20 lg:py-28 bg-[#F8F3F0]">
                   text-[8px]
                   uppercase
                   tracking-[0.25em]
-                  text-white/70
+                  text-white/75
                 "
               >
-                Desde sempre
+                Delicadeza em cada detalhe
               </p>
 
               <p
@@ -2369,14 +2426,13 @@ class="w-full py-16 sm:py-20 lg:py-28 bg-[#F8F3F0]">
 
             </div>
 
-
             <div
               class="
                 w-9
                 h-9
                 rounded-full
                 border
-                border-white/30
+                border-white/40
                 flex
                 items-center
                 justify-center
@@ -2412,7 +2468,7 @@ class="w-full py-16 sm:py-20 lg:py-28 bg-[#F8F3F0]">
           "
         >
 
-          <span class="w-10 h-px bg-[#9E7960]"></span>
+          <span class="w-10 h-px bg-[#B8896F]"></span>
 
           <span
             class="
@@ -2421,10 +2477,10 @@ class="w-full py-16 sm:py-20 lg:py-28 bg-[#F8F3F0]">
               font-semibold
               tracking-[0.3em]
               uppercase
-              text-[#9E7960]
+              text-[#B8896F]
             "
           >
-            Por que Essenza?
+            Por que Serenalis?
           </span>
 
         </div>
@@ -2442,14 +2498,14 @@ class="w-full py-16 sm:py-20 lg:py-28 bg-[#F8F3F0]">
             font-normal
             leading-[1.08]
             tracking-wide
-            text-[#26211E]
+            text-[#262F5B]
           "
         >
 
           Mais do que
           <br>
 
-          <span class="italic text-[#9E7960]">
+          <span class="italic text-[#B8896F]">
             moda íntima.
           </span>
 
@@ -2465,11 +2521,11 @@ class="w-full py-16 sm:py-20 lg:py-28 bg-[#F8F3F0]">
             sm:text-base
             leading-7
             font-light
-            text-[#6F6259]
+            text-[#262F5B]/80
             max-w-xl
           "
         >
-          A Essenza nasceu para valorizar aquilo que existe
+          A Serenalis nasceu para valorizar aquilo que existe
           de mais íntimo: a relação entre você, seu corpo e
           sua autoestima.
         </p>
@@ -2482,7 +2538,7 @@ class="w-full py-16 sm:py-20 lg:py-28 bg-[#F8F3F0]">
             sm:text-base
             leading-7
             font-light
-            text-[#6F6259]
+            text-[#262F5B]/80
             max-w-xl
           "
         >
@@ -2501,7 +2557,7 @@ class="w-full py-16 sm:py-20 lg:py-28 bg-[#F8F3F0]">
             mt-8
             pt-7
             border-t
-            border-[#DCCBC1]
+            border-[#D7A89A]/60
             max-w-xl
           "
         >
@@ -2513,11 +2569,11 @@ class="w-full py-16 sm:py-20 lg:py-28 bg-[#F8F3F0]">
                 w-11
                 h-11
                 rounded-full
-                bg-[#EDE0DA]
+                bg-[#D7A89A]/20
                 flex
                 items-center
                 justify-center
-                text-[#9E7960]
+                text-[#B8896F]
               "
             >
 
@@ -2533,10 +2589,10 @@ class="w-full py-16 sm:py-20 lg:py-28 bg-[#F8F3F0]">
                   font-serif-luxury
                   italic
                   text-lg
-                  text-[#26211E]
+                  text-[#262F5B]
                 "
               >
-                Essenza Íntimas
+                Serenalis
               </p>
 
               <p
@@ -2545,10 +2601,10 @@ class="w-full py-16 sm:py-20 lg:py-28 bg-[#F8F3F0]">
                   text-[8px]
                   uppercase
                   tracking-[0.3em]
-                  text-[#9E7960]
+                  text-[#B8896F]
                 "
               >
-                Elegância que começa em você
+                Lingerie
               </p>
 
             </div>
@@ -2574,16 +2630,16 @@ class="w-full py-16 sm:py-20 lg:py-28 bg-[#F8F3F0]">
               px-7
               py-3.5
               rounded-full
-              bg-[#26211E]
-              text-[#FAF6F4]
+              bg-[#262F5B]
+              text-[#F8F5F2]
               text-[10px]
               font-semibold
               tracking-[0.18em]
               uppercase
-              shadow-[0_12px_30px_rgba(38,33,30,0.15)]
+              shadow-[0_12px_30px_rgba(38,47,91,0.18)]
               transition-all
               duration-300
-              hover:bg-[#9E7960]
+              hover:bg-[#B8896F]
               hover:-translate-y-0.5
               active:scale-95
             "
