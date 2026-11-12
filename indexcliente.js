@@ -4005,7 +4005,7 @@ ${itensTexto}
 
 ━━━━━━━━━━━━━━━━━━━━
 
-💝 Obrigada por escolher a Essenza Íntimas!
+💝 Obrigada por escolher a serenalis lingerie!
 `;
 
   const foneLoja = "5588999935987";
