@@ -3980,7 +3980,7 @@ function enviarParaWhatsApp(pedido, itensDoCarrinho) {
       : "";
 
   const textoZap = `
-✨ *ESSENZA ÍNTIMAS*
+✨ *SERENALIS LINGERIE*
 
 ━━━━━━━━━━━━━━━━━━━━
 
