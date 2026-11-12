@@ -1,38 +1,105 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Essenza Íntimas — Boutique Exclusiva</title>
+
+  <title>Serenalis Lingerie — Boutique Exclusiva</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
-<!-- SweetAlert2 -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <link rel="shortcut icon" href="./logoessenzaintimas.png" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <link rel="shortcut icon" href="./serenalis-logo.png" type="image/png">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  >
+
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap");
-    
+
+    /* =========================================
+       SERENALIS LINGERIE — IDENTIDADE VISUAL
+       ========================================= */
+
+    :root {
+      --brand-navy: #262F5B;
+      --brand-blue: #7BA7C9;
+      --brand-rose: #D7A89A;
+      --brand-ivory: #F8F5F2;
+      --brand-bronze: #B8896E;
+
+      --brand-background: #F8F5F2;
+      --brand-surface: #FFFFFF;
+      --brand-text: #262F5B;
+      --brand-muted: #77717A;
+      --brand-border: #E9DFD9;
+
+      --brand-success: #36785A;
+      --brand-error: #A64040;
+      --brand-warning: #A4773C;
+    }
+
     body {
       font-family: "Plus Jakarta Sans", sans-serif;
-      transition: padding 0.3s;
-      background-color: #FAF6F4;
+      background-color: var(--brand-background);
+      color: var(--brand-text);
+      transition: background-color 0.3s, color 0.3s;
     }
 
     .font-serif-luxury {
       font-family: "Cormorant Garamond", serif;
     }
 
-    /* Cores de Luxo Customizadas */
-    .ifood-red {
-      color: #9E7960; /* Rose Gold / Nude Terroso */
+    /* =========================================
+       CORES DA MARCA
+       ========================================= */
+
+    .ifood-red,
+    .brand-primary {
+      color: var(--brand-navy);
     }
-    .bg-ifood-red {
-      background-color: #26211E; /* Preto Aquecido / Dark Earth */
+
+    .bg-ifood-red,
+    .bg-brand-primary {
+      background-color: var(--brand-navy);
       color: #FFFFFF;
     }
-    .bg-ifood-red:hover {
-      background-color: #3D3531;
+
+    .bg-ifood-red:hover,
+    .bg-brand-primary:hover {
+      background-color: #354477;
     }
+
+    .brand-blue {
+      color: var(--brand-blue);
+    }
+
+    .brand-rose {
+      color: var(--brand-rose);
+    }
+
+    .brand-bronze {
+      color: var(--brand-bronze);
+    }
+
+    .bg-brand-rose {
+      background-color: var(--brand-rose);
+    }
+
+    .bg-brand-ivory {
+      background-color: var(--brand-ivory);
+    }
+
+    .border-brand {
+      border-color: var(--brand-border);
+    }
+
+    /* =========================================
+       UTILITÁRIOS
+       ========================================= */
 
     .line-clamp-2 {
       display: -webkit-box;
@@ -41,26 +108,52 @@
       overflow: hidden;
     }
 
-    @keyframes bounce-subtle {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-3px); }
-    }
-    .animate-bounce-subtle {
-      animation: bounce-subtle 3s ease-in-out infinite;
-    }
-
     .tracking-tightest {
       letter-spacing: -0.04em;
+    }
+
+    .luxury-glow {
+      background: radial-gradient(
+        circle,
+        rgba(123, 167, 201, 0.16) 0%,
+        rgba(248, 245, 242, 0) 70%
+      );
+    }
+
+    .resultado-busca {
+      outline: 3px solid var(--brand-blue) !important;
+      outline-offset: 6px;
+      border-radius: 8px;
+      transition: outline 0.3s ease;
+    }
+
+    /* =========================================
+       ANIMAÇÕES
+       ========================================= */
+
+    @keyframes bounce-subtle {
+      0%, 100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-3px);
+      }
+    }
+
+    .animate-bounce-subtle {
+      animation: bounce-subtle 3s ease-in-out infinite;
     }
 
     @keyframes piscarInfinito {
       0%, 100% {
         border-color: transparent;
-        background-color: #FAF6F4;
+        background-color: var(--brand-background);
       }
+
       50% {
-        border-color: #E8D8CF;
-        background-color: #F5ECE6;
+        border-color: var(--brand-rose);
+        background-color: #F1E5E1;
       }
     }
 
@@ -69,219 +162,236 @@
     }
 
     @keyframes pulse-red {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.35; }
+      0%, 100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.35;
+      }
     }
 
     .animate-pulse-red {
       animation: pulse-red 1.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     }
 
-    /* Glow de Fundo */
-    .luxury-glow {
-      background: radial-gradient(circle, rgba(232,216,207,0.4) 0%, rgba(250,246,244,0) 70%);
+    /* =========================================
+       MOBILE LANDSCAPE — HEADER COMPACTO
+       ========================================= */
+
+    @media (max-height: 500px) and (orientation: landscape) {
+
+      header {
+        position: sticky;
+        top: 0;
+      }
+
+      header > div:first-child {
+        font-size: 8px !important;
+        padding-top: 4px !important;
+        padding-bottom: 4px !important;
+        line-height: 1.2;
+      }
+
+      header > div:last-child {
+        height: 58px !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        min-width: 0;
+      }
+
+      header .text-2xl,
+      header .sm\:text-3xl {
+        font-size: 1.15rem !important;
+        letter-spacing: 0.12em !important;
+        white-space: nowrap;
+      }
+
+      header .gap-4 {
+        gap: 8px !important;
+      }
+
+      header .sm\:gap-6 {
+        gap: 10px !important;
+      }
+
+      header svg {
+        width: 18px;
+        height: 18px;
+      }
+
+      #menuToggle {
+        padding: 6px !important;
+      }
+
+      #search-box {
+        top: 38px !important;
+        width: min(300px, 80vw) !important;
+      }
+
+      header nav {
+        min-width: 0;
+      }
     }
 
-    .resultado-busca {
-  outline: 3px solid #9E7960 !important;
-  outline-offset: 6px;
-  border-radius: 8px;
-  transition: outline 0.3s ease;
-}
+    /* =========================================
+       CELULAR PEQUENO EM LANDSCAPE
+       ========================================= */
 
-    
-  /* ==========================================================
-     📱 MOBILE LANDSCAPE — HEADER COMPACTO
-     ========================================================== */
+    @media (max-height: 420px) and (orientation: landscape) {
 
-  @media (max-height: 500px) and (orientation: landscape) {
+      header > div:first-child {
+        display: none;
+      }
 
-    /* Header */
-    header {
-      position: sticky;
-      top: 0;
+      header > div:last-child {
+        height: 54px !important;
+      }
+
+      header .text-2xl,
+      header .sm\:text-3xl {
+        font-size: 1rem !important;
+      }
     }
 
-    /* Tarja superior */
-    header > div:first-child {
-      font-size: 8px !important;
-      padding-top: 4px !important;
-      padding-bottom: 4px !important;
-      line-height: 1.2;
+    /* =========================================
+       SERENALIS — DARK MODE PREMIUM
+       ========================================= */
+
+    @media (prefers-color-scheme: dark) {
+
+      :root {
+        --brand-background: #171A2D;
+        --brand-surface: #20243B;
+        --brand-text: #F8F5F2;
+        --brand-muted: #B9B8C8;
+        --brand-border: #3B405B;
+      }
+
+      body {
+        background-color: var(--brand-background) !important;
+        color: var(--brand-text);
+      }
+
+      /* Superfícies */
+
+      header,
+      footer {
+        background-color: #20243B;
+        color: var(--brand-text);
+      }
+
+      .bg-white,
+      .bg-gray-50,
+      .bg-gray-100,
+      .bg-stone-50,
+      .bg-stone-100 {
+        background-color: var(--brand-surface) !important;
+        color: var(--brand-text) !important;
+      }
+
+      /* Textos */
+
+      .text-gray-900,
+      .text-gray-800,
+      .text-gray-700,
+      .text-gray-600,
+      .text-stone-900,
+      .text-stone-800,
+      .text-stone-700,
+      .text-black {
+        color: #F0EDF7 !important;
+      }
+
+      .text-gray-500,
+      .text-gray-400,
+      .text-stone-500,
+      .text-stone-400 {
+        color: #B9B8C8 !important;
+      }
+
+      /* Identidade visual */
+
+      .ifood-red,
+      .brand-primary {
+        color: #AFCDE3 !important;
+      }
+
+      .bg-ifood-red,
+      .bg-brand-primary {
+        background-color: #354477 !important;
+        color: #FFFFFF !important;
+      }
+
+      .bg-ifood-red:hover,
+      .bg-brand-primary:hover {
+        background-color: #43558C !important;
+      }
+
+      .brand-blue {
+        color: #AFCDE3 !important;
+      }
+
+      .brand-rose {
+        color: #E5B8AB !important;
+      }
+
+      .brand-bronze {
+        color: #D1A184 !important;
+      }
+
+      .bg-brand-rose {
+        background-color: #684B53 !important;
+      }
+
+      .bg-brand-ivory {
+        background-color: #20243B !important;
+      }
+
+      /* Campos */
+
+      input,
+      textarea,
+      select {
+        background-color: #252941 !important;
+        color: #F8F5F2 !important;
+        border-color: #454A65 !important;
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+        color: #A6A6BC !important;
+      }
+
+      /* Bordas */
+
+      .border-gray-100,
+      .border-gray-200,
+      .border-stone-200,
+      .border {
+        border-color: var(--brand-border);
+      }
+
+      /* Animações */
+
+      .piscar-alerta-direto {
+        animation: none;
+        background-color: #252941;
+        border-color: #454A65;
+      }
+
+      .resultado-busca {
+        outline-color: #AFCDE3 !important;
+      }
+
+      .luxury-glow {
+        background: radial-gradient(
+          circle,
+          rgba(123, 167, 201, 0.12) 0%,
+          transparent 70%
+        );
+      }
     }
-
-    /* Área principal do header */
-    header > div:last-child {
-      height: 58px !important;
-      padding-left: 12px !important;
-      padding-right: 12px !important;
-    }
-
-    /* Logo */
-    header .text-2xl,
-    header .sm\:text-3xl {
-      font-size: 1.15rem !important;
-      letter-spacing: 0.12em !important;
-      white-space: nowrap;
-    }
-
-    /* Espaçamento dos lados */
-    header .gap-4 {
-      gap: 8px !important;
-    }
-
-    header .sm\:gap-6 {
-      gap: 10px !important;
-    }
-
-    /* Ícones */
-    header svg {
-      width: 18px;
-      height: 18px;
-    }
-
-    /* Botão/menu */
-    #menuToggle {
-      padding: 6px !important;
-    }
-
-    /* Busca */
-    #search-box {
-      top: 38px !important;
-      width: min(300px, 80vw) !important;
-    }
-
-    /* Evita elementos ultrapassarem a largura */
-    header > div:last-child {
-      min-width: 0;
-    }
-
-    header nav {
-      min-width: 0;
-    }
-  }
-
-
-  /* ==========================================================
-     📱 CELULAR PEQUENO EM LANDSCAPE
-     ========================================================== */
-
-  @media (max-height: 420px) and (orientation: landscape) {
-
-    header > div:first-child {
-      display: none;
-    }
-
-    header > div:last-child {
-      height: 54px !important;
-    }
-
-    header .text-2xl,
-    header .sm\:text-3xl {
-      font-size: 1rem !important;
-    }
-  }
-  
-  
-/* Modo escuro automático conforme o celular */
-
-/* =====================================
-   ESSENZA ÍNTIMAS — DARK MODE PREMIUM
-   ===================================== */
-
-@media (prefers-color-scheme: dark) {
-
-  body {
-    background-color: #171311 !important;
-    color: #F8F5F2;
-  }
-
-  /* Superfícies principais */
-  header,
-  footer {
-    background-color: #1D1917;
-    color: #F8F5F2;
-  }
-
-  /* Cards e áreas claras */
-  .bg-white,
-  .bg-gray-50,
-  .bg-gray-100,
-  .bg-stone-50,
-  .bg-stone-100 {
-    background-color: #26211E !important;
-    color: #F8F5F2 !important;
-  }
-
-  /* Textos */
-  .text-gray-900,
-  .text-gray-800,
-  .text-gray-700,
-  .text-gray-600,
-  .text-stone-900,
-  .text-stone-800,
-  .text-stone-700,
-  .text-black {
-    color: #F0E6DF !important;
-  }
-
-  .text-gray-500,
-  .text-gray-400,
-  .text-stone-500,
-  .text-stone-400 {
-    color: #B9A69A !important;
-  }
-
-  /* Identidade nude e rose gold */
-  .ifood-red {
-    color: #C8A99A !important;
-  }
-
-  .bg-ifood-red {
-    background-color: #9E7960 !important;
-    color: #FFFFFF !important;
-  }
-
-  .bg-ifood-red:hover {
-    background-color: #B18D75 !important;
-  }
-
-  /* Campos */
-  input,
-  textarea,
-  select {
-    background-color: #211C19 !important;
-    color: #F8F5F2 !important;
-    border-color: #514139 !important;
-  }
-
-  input::placeholder,
-  textarea::placeholder {
-    color: #A9978B !important;
-  }
-
-  /* Bordas */
-  .border-gray-100,
-  .border-gray-200,
-  .border-stone-200,
-  .border {
-    border-color: #40352F;
-  }
-
-  /* Evita o alerta piscando com cores claras */
-  .piscar-alerta-direto {
-    animation: none;
-    background-color: #26211E;
-    border-color: #514139;
-  }
-
-  /* Destaque de pesquisa */
-  .resultado-busca {
-    outline-color: #C8A99A !important;
-  }
-}
-
-
   </style>
 </head>
 <body class="bg-[#FAF6F4] text-[#26211E] min-h-screen flex flex-col items-center selection:bg-[#E8D8CF] selection:text-[#26211E]">
